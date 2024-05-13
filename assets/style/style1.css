@@ -1,0 +1,127 @@
+/* General styling for the entire page */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #f4f4f9; /* Light background, might want to adjust for particles */
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif; /* Ensuring font consistency */
+  box-sizing: border-box;
+}
+
+
+/* Particles background */
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #090909; /* Dark background for visibility of particles */
+  z-index: 0; /* Keeps the particle effect in the background */
+}
+
+/* Styles for the signInContainer with radial gradient background */
+.signInContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles for columns within the signInContainer */
+.column {
+  background-color: rgba(23, 23, 23, 0.488); /* Slightly transparent */
+  min-height: 300px;
+  max-height: 100%;
+  width: 450px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
+  padding: 20px 35px;
+  overflow: auto;
+  border-radius: 5px;
+  z-index: 10; /* Ensures the column overlays on top of the particle effect */
+}
+
+.column form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 35px;
+}
+
+/* Styling for form inputs */
+.column form input[type="text"],
+.column form input[type="email"],
+.column form input[type="password"] {
+  color: #fff;
+  font-size: 14px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #fff;
+  height: 30px;
+  border-radius: 3px;
+  background-color: rgba(19, 19, 19, 0.488);
+}
+
+/* Styling for the submit button */
+.column form input[type="submit"] {
+  background-color: #1ed760;
+  color: #100f0f;
+  height: 36px;
+  width: 88px;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.column form input[type="submit"]:hover {
+  color: #fff;
+  background: #23ec69;
+  box-shadow: 0 0 20px #23ec69;
+  cursor: pointer;
+}
+
+.column form input[type="submit"]:active {
+  color: #000;
+  background: #23ec69;
+  box-shadow: 0 0 40px #23ec69;
+  cursor: pointer;
+}
+
+/* Header styling within columns */
+.column .header {
+  padding: 20px 0;
+  color: #fff;
+}
+
+.column h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0;
+  padding-top: 16px;
+  color: #ffffff;
+}
+
+.column .header span,
+.signInMessage {
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.column .header img {
+  width: 100px;
+}
+.errorMessage{
+  color:red;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
