@@ -155,3 +155,7 @@ body {
   box-shadow: 0 0 40px #23ec69;
   cursor: pointer;
 }
+.btn2{
+  text-decoration: none;
+  color: #fff;
+}
